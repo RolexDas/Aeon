@@ -1,11 +1,11 @@
 # REQUIRED CONFIG
-BOT_TOKEN = ""
-OWNER_ID = 0
-TELEGRAM_API = 0
-TELEGRAM_HASH = ""
+BOT_TOKEN = "7319401145:AAFgxIKthqcO_9UBtxAogpPWMDLrGvl_6Rc"
+OWNER_ID = "6107997458"
+TELEGRAM_API = "28991562"
+TELEGRAM_HASH = "215d93eeacd3d1c704887f80b0b914f4"
 
 # SEMI-REQUIRED, WE SUGGEST TO FILL IT FROM MONGODB
-DATABASE_URL = ""
+DATABASE_URL = "mongodb+srv://rolexfilterbot:04612010@cluster100.lfunohx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster100"
 
 # OPTIONAL CONFIG
 TG_PROXY = {}
@@ -81,7 +81,7 @@ USENET_SERVERS = [
 ]
 
 # Update
-UPSTREAM_REPO = "https://github.com/AeonOrg/Aeon-MLTB"
+UPSTREAM_REPO = "https://github.com/RolexDas/Aeon"
 UPSTREAM_BRANCH = "main"
 
 # Leech
