@@ -43,20 +43,20 @@ async def bot_stats(_, message):
     swap = swap_memory()
     memory = virtual_memory()
     stats = f"""
-<b>Commit Date:</b> {commands["commit"]}
+<b>📆Commit Date:</b> {commands["commit"]}
 
 <b>Bot Uptime:</b> {get_readable_time(time() - bot_start_time)}
 <b>OS Uptime:</b> {get_readable_time(time() - boot_time())}
 
-<b>Total Disk Space:</b> {get_readable_file_size(total)}
-<b>Used:</b> {get_readable_file_size(used)} | <b>Free:</b> {get_readable_file_size(free)}
+<b>💽Total Disk Space:</b> {get_readable_file_size(total)}
+<b>🔧Used:</b> {get_readable_file_size(used)} | <b>Free:</b> {get_readable_file_size(free)}
 
-<b>Upload:</b> {get_readable_file_size(net_io_counters().bytes_sent)}
-<b>Download:</b> {get_readable_file_size(net_io_counters().bytes_recv)}
+<b>📈Upload:</b> {get_readable_file_size(net_io_counters().bytes_sent)}
+<b>📉Download:</b> {get_readable_file_size(net_io_counters().bytes_recv)}
 
-<b>CPU:</b> {cpu_percent(interval=0.5)}%
-<b>RAM:</b> {memory.percent}%
-<b>DISK:</b> {disk}%
+<b>🖥CPU:</b> {cpu_percent(interval=0.5)}%
+<b>💾RAM:</b> {memory.percent}%
+<b>💽DISK:</b> {disk}%
 
 <b>Physical Cores:</b> {cpu_count(logical=False)}
 <b>Total Cores:</b> {cpu_count()}
